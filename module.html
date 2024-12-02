@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+       <meta name="description" content="modules">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EZE Jordan">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://eze-david.highticketdeveloper.com/LOGO3.png"><!--Affiche l'image -->
+    <title>modules</title>
+    <style>
+        body{
+            background-color: #f5f5f5;
+
+        }
+        /*-----------------------------------------barre de recherche-----------------------------------------*/
+        #search .grid .grid-header .logo{
+            margin-left: 45%;
+            height: 100px;
+            width: 120px;
+            
+        }
+        #search .grid .grid-header h1 {
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+        }
+        #search .grid .grid-body .search-group {
+            display: grid;
+            grid-template-columns: 90% 10%;
+        }
+        #search .grid .grid-body .search-group .input-container {
+            height: 50px;
+        }
+        #search .grid .grid-body .search-group .input-container .search-input {
+            width: 100%;
+            height: 50px;
+            outline: none;
+            padding-left: 10px;
+            font-size: 17px;
+            border-radius: 20px 6px 0px 20px;
+            border: 1px solid #ccc;
+        }
+        #search .grid .grid-body .search-group .button-container {
+            height: 50px;
+        }
+        #search .grid .grid-body .search-group .button-container .search-button {
+            width: 100%;
+            height: 50px;
+            background-color: #00b0f0;
+            border: 1px solid #00b0f0;
+            border-radius: 0px 20px 20px 0px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        #search .grid .grid-body .search-group .button-container .search-button i {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        @media screen and (max-width: 576px) {
+            #search .grid .grid-header .logo{
+            margin-left: 35%;
+            height: 100px;
+            width: 120px;
+            
+        }
+            #search .grid .grid-body .search-group {
+                grid-template-columns: 80% 20%;
+            }
+            #search .search-input {
+                font-size: 15px;
+                padding-left: 8px;
+            }
+            #search .search-button {
+                font-size: 14px;
+            }
+        }
+        /*-----------------------------------------fin barre de recherche-----------------------------------------*/
+
+        /*-----------------------------------------appel a l'action-----------------------------------------*/
+        #appelAction .grid .grid-header h2{
+            text-align: center;
+            font-size: 40px;
+            
+        }
+        #appelAction .grid .grid-body{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            grid-gap: 1%;
+        }
+        #appelAction .grid .grid-body .column .panel{
+            background-color: #00B0F0;
+            border: 2px solid #ff0000
+        }
+        #appelAction .grid .grid-body .column .panel-header{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px; 
+        }
+        #appelAction .grid .grid-body .column .panel-header h4{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            color: #ffffff;
+            
+        }
+        #appelAction .grid .grid-body .column .panel-body{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #appelAction .grid .grid-body .column .panel-body p{
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+        #appelAction .grid .grid-body .column .panel-footer{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        #appelAction .grid .grid-body .column .panel-footer .cta button{
+            height: 50px;
+            border: none;
+            width: 250px;
+            outline: none;
+            border-radius: 100px;
+            background-color: #ffffff;
+            color: #000000;
+            margin-top: 20px;
+            transition: 0.2s;
+        }
+        #appelAction .grid .grid-body .column .panel-footer .cta button:hover{
+            background-color: #000000;
+            color: #ffffff;       
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            .grid .grid-header h2{
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        #appelAction .grid .grid-body{
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-gap: 1%;
+        }
+        #appelAction .grid .grid-body .column .panel{
+            background-color: #00B0F0;
+            border: 2px solid #ff0000
+        }
+        #appelAction .grid .grid-body .column .panel-header{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px; 
+        }
+        #appelAction .grid .grid-body .column .panel-header h4{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            color: #ffffff;
+            
+        }
+        #appelAction .grid .grid-body .column .panel-body{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #appelAction .grid .grid-body .column .panel-body p{
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+        #appelAction .grid .grid-body .column .panel-footer{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        #appelAction .grid .grid-body .column .panel-footer .cta button{
+            height: 50px;
+            border: none;
+            width: 250px;
+            outline: none;
+            border-radius: 100px;
+            background-color: #ffffff;
+            color: #000000;
+            margin-top: 20px;
+            transition: 0.2s;
+        }
+        #appelAction .grid .grid-body .column .panel-footer .cta button:hover{
+            background-color: #000000;
+            color: #ffffff;       
+        }
+        }
+
+        @media screen  and (min-width: 200px) and (max-width: 576px) {
+            .grid .grid-header h2{
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        #appelAction .grid .grid-body{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-gap: 0%;
+        }
+        #appelAction .grid .grid-body .column .panel{
+            background-color: #00B0F0;
+            border: 2px solid #ff0000;
+            margin-bottom: 20px;
+        }
+        #appelAction .grid .grid-body .column .panel-header{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+        
+        }
+        #appelAction .grid .grid-body .column .panel-header h4{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            color: #ffffff;
+            
+        }
+        #appelAction .grid .grid-body .column .panel-body{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #appelAction .grid .grid-body .column .panel-body p{
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+        #appelAction .grid .grid-body .column .panel-footer{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        #appelAction .grid .grid-body .column .panel-footer .cta button{
+            height: 50px;
+            border: none;
+            width: 250px;
+            outline: none;
+            border-radius: 100px;
+            background-color: #ffffff;
+            color: #000000;
+            margin-top: 20px;
+            transition: 0.2s;
+        }
+        #appelAction .grid .grid-body .column .panel-footer .cta button:hover{
+            background-color: #000000;
+            color: #ffffff;       
+        }
+            
+        }
+
+        /*-----------------------------------------fin appel a l'action-----------------------------------------*/
+
+
+        /*-----------------------------------------catalogue-------------------------------------------------------------------------*/
+        #catalogue .grid .grid-header h2{
+            text-align: center;
+            font-size: 40px;
+        }
+        #catalogue .grid .grid-body .column{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            grid-gap: 1%;
+        }
+        #catalogue .grid .grid-body .column a{
+            text-decoration: none;
+        }
+        #catalogue .grid .grid-body .column a .panel{
+            background-color: #ffffff;
+            transition: 0.2s; 
+        }
+        #catalogue .grid .grid-body .column a .panel:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #catalogue .grid .grid-body .column .panel-header img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        #catalogue .grid .grid-body .column .panel-body{
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        #catalogue .grid .grid-body .column .panel-body .product .name{
+            display: block;
+            color: #000000;           
+        }
+        #catalogue .grid .grid-body .column .panel-body .product .price{
+            color: #4d4d4d;
+            font-weight: bold;
+        }
+        #catalogue .grid .grid-body .column .panel-body .product .line-through{
+            color: #ff0000;
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+
+        /*-----------------------------------------fin catalogue-------------------------------------------------------------------------*/
+
+
+        /*-----------------------------------------Module carte Google Map-------------------------------------------------------------------------*/
+
+        #carte .grid .grid-header h2{
+            text-align: center;
+            font-size: 40px;
+        }
+      
+    
+        /*-----------------------------------------fin Module carte Google Map-------------------------------------------------------------------------*/
+
+
+        /*-----------------------------------------Module commentaire-------------------------------------------------------------------------*/
+
+        #commentaire .grid .grid-header h2{
+            text-align: center;
+            font-size: 40px;
+        }
+    #commentaire .grid .grid-body .panel{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        background-color: #ffffff;
+    }
+    #commentaire .grid .grid-body .panel .panel-body{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+
+    #commentaire .grid .grid-body .panel .panel-body .avatar img{
+        width: 70%;
+        border-radius: 50%;
+    }
+    #commentaire .grid .grid-body .panel .panel-body .review{
+        padding-left: 10px;
+    }
+    #commentaire .grid .grid-body .panel .panel-body .review .user-name{
+        color: #ccc;
+    }
+    #commentaire .grid .grid-body .panel .panel-footer{
+        text-align: right;
+    }
+    #commentaire .grid .grid-body .panel .panel-footer a{
+        cursor: pointer;
+        margin-left: 20px;
+        color: #ccc;
+        font-weight: bold;
+    }
+    @media screen and(min-width: 1200px) and (max-width: 1400px) {
+        
+
+    }
+    @media screen and(min-width: 992px) and (max-width: 1200px) {
+        
+    }
+    @media screen and(min-width: 768px) and (max-width: 992px) {
+        
+    }
+    @media screen and(min-width: 576px) and (max-width: 768px) {
+        
+    }
+
+
+        /*-----------------------------------------fin Module commentaire-------------------------------------------------------------------------*/
+
+
+        /*-----------------------------------------module compteur-------------------------------------------------------------------------*/
+
+        #compteur .grid .grid-header h2{
+            text-align: center;
+            font-size: 40px;
+        }
+    #compteur .grid .grid-body{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 1%;
+    }
+    #compteur .grid .grid-body .column{
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #compteur .grid .grid-body .column .value{
+        display: block;
+        font-size: 100px;
+        font-weight: 800;
+    }
+    #compteur .grid .grid-body .column .value-title{
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    @media screen and (min-width: 200px) and (max-width: 576px) {
+        #compteur .grid .grid-body{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-gap: 1%;
+        }
+    }
+
+
+        /*-----------------------------------------fin module compteur-------------------------------------------------------------------------*/
+
+
+        /*-----------------------------------------newletter-------------------------------------------------------------------------*/
+        #newsletter .grid .grid-body {
+            background-color: #072f6b;
+            padding-top: 50px;
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-bottom: 50px;
+            margin: auto;
+            max-width: 500px;
+        }
+        #newsletter .grid .grid-body .form-title {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #newsletter .grid .grid-body .form-control {
+            margin-bottom: 15px;
+        }
+        #newsletter .grid .grid-body .form-control .input {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        #newsletter .grid .grid-body .form-button {
+            height: 50px;
+            width: 100%;
+            background-color: #35bf0f;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        @media screen and(min-width: 576px) and (max-width: 768px) {
+            #newsletter .grid .grid-body {
+            background-color: #072f6b;
+            padding-top: 50px;
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-bottom: 50px;
+            margin: auto;
+            max-width: 500px;
+        }
+        #newsletter .grid .grid-body .form-title {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #newsletter .grid .grid-body .form-control {
+            margin-bottom: 15px;
+        }
+        #newsletter .grid .grid-body .form-control .input {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        #newsletter .grid .grid-body .form-button {
+            height: 50px;
+            width: 100%;
+            background-color: #35bf0f;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    }
+
+        @media screen and (max-width: 576px) {
+            #newsletter .grid .grid-body {
+                padding: 20px;
+            }
+            #newsletter .grid .grid-body .form-title {
+                font-size: 24px;
+            }
+            #newsletter .grid .grid-body .form-button {
+                font-size: 18px;
+            }
+        }
+        @media screen and(min-width: 768px) and (max-width: 992px) {
+            #newsletter .grid .grid-body {
+            background-color: #072f6b;
+            padding-top: 50px;
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-bottom: 50px;
+            margin: auto;
+            max-width: 500px;
+        }
+        #newsletter .grid .grid-body .form-title {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #newsletter .grid .grid-body .form-control {
+            margin-bottom: 15px;
+        }
+        #newsletter .grid .grid-body .form-control .input {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        #newsletter .grid .grid-body .form-button {
+            height: 50px;
+            width: 100%;
+            background-color: #35bf0f;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+            
+    }
+
+        /*-----------------------------------------fin newletter-------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+        /*-----------------------------------------footer-------------------------------------------------------------------------*/
+        #page-footer .grid .grid-header {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: #000000;
+        }
+
+        #page-footer .grid .grid-header .column-1 {
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        #page-footer .grid .grid-header .column-1 a {
+            margin-right: 20px;
+            color: #FFFFFF;
+        }
+
+        #page-footer .grid .grid-header .column-1 a span {
+            margin-left: 5px;
+            font-weight: bold;
+           
+        }
+
+        #page-footer .grid .grid-header .column-2 {
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: right;
+        }
+
+        #page-footer .grid .grid-header .column-2 a {
+            margin-right: 20px;
+        }
+
+        #page-footer .grid .grid-header .column-2 .fa {
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+        }
+
+        #page-footer .grid .grid-header .column-2 .fa-facebook {
+            background-color: #0866ff;
+            color: #FFFFFF;
+        }
+
+        #page-footer .grid .grid-header .column-2 .fa-linkedin{
+			background-color: #007BB5;
+			color: #FFFFFF;
+          
+        }
+
+        #page-footer .grid .grid-header .column-2 .fa-whatsapp {
+            background-color: #29a71a;
+            color: #FFFFFF;
+        
+        }
+          #page-footer .grid .grid-header .column-2 .fa-youtube-play{
+			background-color: #BB0000;
+			color: #FFFFFF;
+		}
+          #page-footer .grid .grid-header .column-2 .fa-twitter{
+			background-color: #55ACEE;
+			color: #FFFFFF;
+		}
+        @media screen and (min-width: 200px) and (max-width: 576px) {
+            #page-footer .grid .grid-header {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: #000000;
+        }
+
+        #page-footer .grid .grid-header .column-1 {
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        #page-footer .grid .grid-header .column-1 a {
+            color: #FFFFFF;
+        }
+
+        #page-footer .grid .grid-header .column-1 a span {
+            margin-left: 5px;
+            font-weight: bold;
+           
+        }
+
+        #page-footer .grid .grid-header .column-2 {
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            text-align: right;
+            margin: auto;
+            gap: 10px;
+        }
+
+        
+
+        #page-footer .grid .grid-header .column-2 .fa {
+            height: 20px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 10px;
+        }
+
+        #page-footer .grid .grid-header .column-2 .fa-facebook {
+            background-color: #0866ff;
+            color: #FFFFFF;
+        }
+
+        #page-footer .grid .grid-header .column-2 .fa-linkedin{
+			background-color: #007BB5;
+			color: #FFFFFF;
+          
+        }
+
+        #page-footer .grid .grid-header .column-2 .fa-whatsapp {
+            background-color: #29a71a;
+            color: #FFFFFF;
+        
+        }
+          #page-footer .grid .grid-header .column-2 .fa-youtube-play{
+			background-color: #BB0000;
+			color: #FFFFFF;
+		}
+          #page-footer .grid .grid-header .column-2 .fa-twitter{
+			background-color: #55ACEE;
+			color: #FFFFFF;
+		}
+
+        }
+
+
+        /*-----------------------------------------fin footer-------------------------------------------------------------------------*/
+</style>
+</head>
+<body>
+    
+
+
+    <div class="fullwidth" id="page-header"></div><!--page-header-->
+
+
+    <div class="fullwidth" id="page-body">
+
+                            <!--barre de recherche-->
+
+        <div class="fullwidth" id="search">
+            <div class="grid">
+                <div class="grid-header">
+                    <img class="logo" src="https://eze-david.highticketdeveloper.com/LOGO3.png" alt="">
+                    <h1>Module barre de recherche</h1>
+                </div>
+                <div class="grid-body">
+                    <form method="post" class="search-group">
+                        <div class="input-container">
+                            <label for="search" class="sr-only">Rechercher</label>
+                            <input type="search" id="search" class="search-input" placeholder="Recherchez un produit ou une catégorie">
+                        </div>
+                        <div class="button-container">
+                            <button type="submit" class="search-button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div><!--#search-->
+
+
+                        <!--Appel a l'action-->
+        <div class="fullwidth" id="appelAction">
+        <div class="grid">
+            <div class="grid-header">
+                <h2>Appel a l'action</h2>
+            </div>
+            
+            <div class="grid-body">
+                <div class="column">
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h4>Titre ici</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Sequi aliquid fuga veritatis illum, ratione omnis accusantium dolorum, 
+                                accusamus quas amet repellendus, doloribus quis provident! Nihil velit sequi quae dolores repudiandae.</p>
+                        </div>
+                        <div class="panel-footer">
+                            
+                            <a href="#" class="cta"><button>En savoir plus</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h4>Titre ici</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Sequi aliquid fuga veritatis illum, ratione omnis accusantium dolorum, 
+                                accusamus quas amet repellendus, doloribus quis provident! Nihil velit sequi quae dolores repudiandae.</p>
+                        </div>
+                        <div class="panel-footer">
+                            
+                            <a href="#" class="cta"><button>En savoir plus</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h4>Titre ici</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Sequi aliquid fuga veritatis illum, ratione omnis accusantium dolorum, 
+                                accusamus quas amet repellendus, doloribus quis provident! Nihil velit sequi quae dolores repudiandae.</p>
+                        </div>
+                        <div class="panel-footer">
+                            
+                            <a href="#" class="cta"><button>En savoir plus</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            </div>
+        </div><!--#appelAction-->
+
+
+                        <!--Catalogue de produit-->
+
+        <div class="fullwidth" id="catalogue">
+            <div class="grid">
+                <div class="grid-header">
+                    <h2>Catalogue de Maillots</h2>
+                </div>
+                <div class="grid-body">
+                    <div class="column">
+                        <a href="#" class="cta">
+                            <div class="panel">
+                                <div class="panel-header">
+                                    <img src="https://assets-fr.imgfoot.com/media/cache/800x800/rm-home-2023-2024.jpg" alt="">
+                                </div>
+                                <div class="panel-body">
+                                    <p class="product">
+                                        <span class="name">Maillot Real Madrid</span>
+                                        <span class="price">Fcfa 75 000</span>
+                                        <span class="line-through">Fcfa 90 0000</span>
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="#" class="cta">
+                            <div class="panel">
+                                <div class="panel-header">
+                                    <img src="https://img.elo7.com.br/product/685x685/4D2ACF2/arte-terceira-camisa-real-madrid-2023-24-vetor-futebol.jpg" alt="">
+                                </div>
+                                <div class="panel-body">
+                                    <p class="product">
+                                        <span class="name">Maillot Real Madrid</span>
+                                        <span class="price">Fcfa 60 000</span>
+                                        <span class="line-through">Fcfa 70 0000</span>
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="#" class="cta">
+                            <div class="panel">
+                                <div class="panel-header">
+                                    <img src="https://assets-fr.imgfoot.com/media/cache/800x800/real-madrid-third-2020-2021.jpg" alt="">
+                                </div>
+                                <div class="panel-body">
+                                    <p class="product">
+                                        <span class="name">Maillot Real Madrid</span>
+                                        <span class="price">Fcfa 80 000</span>
+                                        <span class="line-through">Fcfa 95 0000</span>
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!--#catalogue-->
+
+        <!--Module carte Google Map-->
+
+        <div class="fullwidth" id="carte">
+            <div class="grid">
+                <div class="grid-header">
+                    <h2>Module carte Google Map</h2>
+                </div>
+                <div class="grid-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d73204.09277200657!2d9.46367451254893!3d0.4270730030474065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sga!4v1732697307271!5m2!1sfr!2sga" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="grid-footer"></div>
+            </div>
+        </div><!--#carte-->
+
+
+        <!--Module commentaire-->
+
+        <div class="fullwidth" id="commentaire">
+            <div class="grid">
+                <div class="grid-header">
+                    <h2>Module commentaire</h2>
+                </div>
+                <div class="grid-body">
+                    <div class="panel">
+                    <div class="panel-header"></div>
+        
+                    <div class="panel-body">
+                        <div class="avatar">
+                            <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611713.jpg?t=st=1733092793~exp=1733096393~hmac=9a6df312eb744d93f85636ef3142b6e228eb5433a01d4f420265745351251dab&w=740">
+                        </div>
+                        <div class="review">
+                            <p class="user-name">
+                                <span>Laurel</span>
+                                <span>.</span>
+                                <span> il y a 1h</span>
+        
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Modi obcaecati reprehenderit doloremque, ad dolor voluptas tenetur nam deserunt. 
+                                Laudantium voluptatum velit adipisci minus nemo quasi earum maiores illum expedita iste!</p>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <a>J'aime</a>
+                        <a>Répondre</a>
+                    </div>
+                
+                </div><!--panel-->
+        
+                <div class="panel">
+                    <div class="panel-header"></div>
+        
+                    <div class="panel-body">
+                        <div class="avatar">
+                            <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611746.jpg?t=st=1733092856~exp=1733096456~hmac=9193f7a309af05f98db28bd0900d6411ae19e3d598765fe8e5456846c7e0f79f&w=740">
+                        </div>
+                        <div class="review">
+                            <p class="user-name">
+                                <span>Laurel</span>
+                                <span>.</span>
+                                <span> il y a 1h</span>
+        
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Modi obcaecati reprehenderit doloremque, ad dolor voluptas tenetur nam deserunt. 
+                                Laudantium voluptatum velit adipisci minus nemo quasi earum maiores illum expedita iste!</p>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <a>J'aime</a>
+                        <a>Répondre</a>
+                    </div>
+                
+                </div><!--panel-->
+        
+                <div class="panel">
+                    <div class="panel-header"></div>
+        
+                    <div class="panel-body">
+                        <div class="avatar">
+                            <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611707.jpg?t=st=1733092877~exp=1733096477~hmac=efab8f2eb1e60ac64da76750fc66188cff251dc0f1e820ccd3c8dd8eafa2a65e&w=740">
+                        </div>
+                        <div class="review">
+                            <p class="user-name">
+                                <span>Laurel</span>
+                                <span>.</span>
+                                <span> il y a 1h</span>
+        
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Modi obcaecati reprehenderit doloremque, ad dolor voluptas tenetur nam deserunt. 
+                                Laudantium voluptatum velit adipisci minus nemo quasi earum maiores illum expedita iste!</p>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <a>J'aime</a>
+                        <a>Répondre</a>
+                    </div>
+                
+                </div><!--panel-->
+            </div>
+            </div>
+        </div><!--#commentaire-->
+
+
+        <!--Module compteur-->
+
+        <div class="fullwidth" id="compteur">
+            <div class="grid">
+                <div class="grid-header">
+                    <h2>Module compter de nombre</h2>
+                </div>
+                <div class="grid-body">
+                    <div class="column">
+                        <span class="value" style="color: #ff0000;">150</span>
+                        <span class="value-title">visiteurs</span>
+                    </div>
+                    <div class="column">
+                        <span class="value" style="color: #1a2bca;">100</span>
+                        <span class="value-title">contacts</span>
+                    </div>
+                    <div class="column">
+                        <span class="value" style="color: #248e65;">50</span>
+                        <span class="value-title">Acheteurs</span>
+                    </div>
+        
+                </div>
+                <div class="grid-footer"></div>
+            </div>
+        </div><!--#compteur-->
+
+
+
+        <!--Module newsletter-->
+
+        <div class="fullwidth" id="newsletter">
+            <div class="grid">
+                <div class="grid-header">
+                    <h2 style="text-align: center;">Formulaire Newsletter</h2>
+                </div>
+                <div class="grid-body">
+                    <form method="post" action="/submit-newsletter">
+                        <h3 class="form-title">Inscrivez-vous à notre newsletter</h3>
+                        
+                        <div class="form-control">
+                            <label for="first-name" style="color: #ffffff;">Votre prénom</label>
+                            <input class="input" type="text" name="contact-first-name" id="first-name" placeholder="Votre prénom" required>
+                        </div>
+        
+                        <div class="form-control">
+                            <label for="email" style="color: #ffffff;">Votre adresse email</label>
+                            <input class="input" type="email" name="contact-email" id="email" placeholder="Votre adresse email" required>
+                        </div>
+        
+                        <button type="submit" class="form-button">Je m'inscris</button>
+                    </form>
+                </div>
+            </div>
+        </div><!--#newsletter-->
+            
+    </div><!--page-body-->
+
+
+
+
+    <div class="fullwidth" id="page-footer">
+
+        <div class="grid">
+            <div class="grid-header">
+                <div class="column column-1">
+                    <a>©Copyright 2024 | Tous droits réservés à EZE Jordan |  </a>
+                </div>
+                <div class="column column-2">
+               	<a href=""><button class="fa fa-facebook"></button></a>
+					<a href=""><button class="fa fa-linkedin"></button></a>
+					<a href=""><button class="fa fa-youtube-play"></button></a>
+					<a href=""><button class="fa fa-twitter"></button></a>
+					<a href=""><button class="fa fa-whatsapp"></button></a>
+					
+                </div>
+            </div><!--lien-RS-->
+            <div class="grid-body"></div>
+            <div class="grid-footer"></div>
+           
+        </div>
+            
+  </div><!--#page-footer-->
+
+
+
+</body>
+</html>
+
